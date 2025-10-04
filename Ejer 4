@@ -1,0 +1,25 @@
+//Calcular la siguiente suma
+//S= 1 - 2 + 3 - 4 + 5 - .........+/- N.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    int suma = 0;
+
+    cout << "Ingrese un numero entero positivo N: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++) {
+        if (i % 2 == 0) {
+            suma -= i; // si es par, se resta
+        } else {
+            suma += i; // si es impar, se suma
+        }
+    }
+
+    cout << "La suma es: " << suma << endl;
+
+    return 0;
+}
