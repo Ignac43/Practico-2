@@ -1,0 +1,21 @@
+//Suma de los cuadrados de los primeros N números enteros.
+//S=1^2+2^2+3^2+⋯…………+N^2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N, suma = 0;
+
+    cout << "Ingrese un numero entero N: ";
+    cin >> N;
+
+    for (int i = 1; i <= N; i++) {
+        suma += i * i; // sumamos el cuadrado de i
+    }
+
+    cout << "La suma de los cuadrados de los primeros " << N 
+         << " numeros enteros es: " << suma << endl;
+
+    return 0;
+}
