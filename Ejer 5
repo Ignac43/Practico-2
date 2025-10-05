@@ -1,0 +1,20 @@
+//Calcular el producto de los primeros N números enteros.
+//P= 1x2x3x........xN
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, M=1;
+    
+    cout << "Ingrese un numero entero positivo N: ";
+    cin >> N;
+    
+    for (int i = 1; i <= N; i++) 
+        M*=i;
+    
+    cout<<"El prodcuto de los primeros "<<N<<" numeros enteros es: "<<M<<endl;
+    
+    return 0;
+}
