@@ -1,0 +1,25 @@
+//Calcular la siguiente serie, donde X es un número real.
+//S=x^1+x^2+x^3+⋯…………+x^n
+
+#include <iostream>
+#include <cmath>   // para pow()
+using namespace std;
+
+int main() {
+    double x;
+    int n;
+    double suma = 0;
+
+    cout << "Ingrese el valor de x (real): ";
+    cin >> x;
+    cout << "Ingrese el valor de n (entero positivo): ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++) {
+        suma += pow(x, i);
+    }
+
+    cout << "La suma de la serie es: " << suma << endl;
+
+    return 0;
+}
