@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    double X, fact=1, suma=0;
+    int n;
+
+    cout << "Ingrese el valor del numero: ";
+    cin >> X;
+    cout << "Ingrese el valor de la potencia y el divisor: ";
+    cin >> n;
+
+    for (int i=1;i<=n;i++) {
+        fact=fact*i;
+        suma=suma+(pow(X,i)/fact);
+    }
+    
+    cout << "El valor de la serie es: " << suma << endl;
+    
+     return 0;
+}
+   
